@@ -1,0 +1,58 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "extensions": {
+    "recommendations": [
+      "editorconfig.editorconfig",
+      "esbenp.prettier-vscode",
+      "dbaeumer.vscode-eslint"
+    ]
+  },
+  "settings": {
+    "eslint.enable": true,
+    "eslint.codeActionsOnSave.mode": "all",
+    "eslint.format.enable": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+    "files.insertFinalNewline": true,
+    "files.eol": "\n",
+    "files.exclude": {
+      "_sterling-archive": true,
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[javascriptreact]": {
+      "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[html]": {
+      "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    }
+  },
+  "launch": {
+    "version": "0.5.1",
+    "configurations": [
+      {
+        "type": "chrome",
+        "request": "launch",
+        "name": "Debug",
+        "url": "https://localhost:3001/",
+        "webRoot": "${workspaceFolder}",
+        "sourceMaps": true,
+        "pathMapping": {
+          "src": "${workspaceFolder}/apps/demo/src",
+        },
+      },
+    ]
+  }
+}
